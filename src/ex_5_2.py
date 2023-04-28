@@ -23,7 +23,6 @@ if __name__ == "__main__":
     data -= np.mean(data)
     data /= np.std(data)
     processed = data
-
     # Save the output to OUTFILE using numpy routines.
     np.savetxt(OUTFILE, processed, delimiter=',')
 
