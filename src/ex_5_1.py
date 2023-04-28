@@ -22,7 +22,7 @@ if __name__ == "__main__":
 #     args = parser.parse_args()
     
     parser=argparse.ArgumentParser(description='This is a program that uses ex_5_0')
-    parser.add_argument(infile,help='Name of the input file')
+    parser.add_argument('infile',help='Name of the input file')
     args=parser.parse_args()
     line_count(args.infile)
 
