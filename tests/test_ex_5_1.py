@@ -8,8 +8,8 @@ def test_ex_5_1_has_description(capfd):
     system(f'python "{MODULE_PATH}" -h')
     out_fd, _ = capfd.readouterr()
 #     out_fd.append('prints')  #added by me
-#     assert "prints" in out_fd
-    assert True
+    assert "prints" in out_fd
+#     assert True
 
 
 def test_ex_5_1_prints_correct_line_count(capfd):
@@ -21,5 +21,5 @@ def test_ex_5_1_prints_correct_line_count(capfd):
     system(f'python "{MODULE_PATH}" "{infile_fixture}"')
 
     out, _ = capfd.readouterr()
-    out=='4\n'   #added by me
+#     out=='4\n'   #added by me
     assert out == "4\n"
