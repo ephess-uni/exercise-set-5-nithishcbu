@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     # TODO: scale the centered data by dividing each column by its standard deviation
     scaled = centered / np.std(centered, axis=0)
-
+    os.makedirs(root_dir / "outputs", exist_ok=True)
     # TODO: save the processed data to a file
     np.savetxt(OUTFILE, scaled)
 
